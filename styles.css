@@ -1,12 +1,15 @@
 :root {
-    background-color: #111111;
+    --background-color: #111111;
     --color: white;
+    --blood-color: #be0000;
 }
 
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+
+    background-color: var(--background-color);
 
     color: var(--color);
     display: flex;
@@ -24,6 +27,10 @@ body {
 
 .title-area > h1 {
     font-family: 'Press Start 2P', cursive;
+}
+
+.title-area p > em {
+    color: var(--blood-color);
 }
 
 .form-area {
@@ -54,4 +61,13 @@ body {
 
 .submit-button {
     margin-top: 10px;
+
+    color: var(--blood-color);
+    background: var(--background-color);
+    border: 2px solid var(--blood-color);
+}
+
+.submit-button:hover {
+    color: var(--background-color);
+    background: var(--blood-color);
 }
