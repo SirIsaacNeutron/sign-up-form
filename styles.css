@@ -1,5 +1,5 @@
 :root {
-    background-color: black;
+    background-color: #111111;
     --color: white;
 }
 
@@ -35,5 +35,11 @@ body {
 }
 
 .form > form {
-    margin-left: 30px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-button {
+    margin-top: 10px;
 }
