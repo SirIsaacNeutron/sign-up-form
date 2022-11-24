@@ -11,12 +11,19 @@ body {
     color: var(--color);
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title-area {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 30px;
+}
+
+.title-area > h1 {
+    font-family: 'Press Start 2P', cursive;
 }
 
 .form-area {
@@ -31,13 +38,18 @@ body {
     display: flex;
     align-items: center;
 
-    border: 3px solid #4c1fff;
+    border: 8px solid #6b46ff;
+    border-radius: 10px;
 }
 
 .form > form {
     margin: 0 30px;
     display: flex;
     flex-direction: column;
+}
+
+.form input {
+    margin-bottom: 10px;
 }
 
 .submit-button {
