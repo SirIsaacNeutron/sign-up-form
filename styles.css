@@ -2,6 +2,7 @@
     --background-color: #111111;
     --color: white;
     --blood-color: #be0000;
+    --valid-color: #43ff43;
 }
 
 body {
@@ -72,12 +73,12 @@ body {
 }
 
 .form input:focus:valid {
-    border: 2px solid rgb(67, 255, 67); 
+    border: 2px solid var(--valid-color); 
     outline: none; /* override default */
 }
 
 .form input:valid {
-    border: 2px solid rgb(67, 255, 67);
+    border: 2px solid var(--valid-color);
 }
 
 .submit-button {
