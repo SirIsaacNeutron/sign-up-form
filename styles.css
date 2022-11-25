@@ -3,6 +3,7 @@
     --color: white;
     --blood-color: #be0000;
     --valid-color: #43ff43;
+    --form-border-color: #6b46ff;
 }
 
 body {
@@ -48,7 +49,7 @@ body {
     display: flex;
     align-items: center;
 
-    border: 8px solid #6b46ff;
+    border: 8px solid var(--form-border-color);
     border-radius: 10px;
 }
 
@@ -97,4 +98,20 @@ body {
 .submit-button:hover {
     color: var(--background-color);
     background: var(--blood-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.code-link {
+    text-decoration: none;
+    color: var(--form-border-color);
+}
+
+.code-link:hover {
+    text-decoration: underline;
 }
